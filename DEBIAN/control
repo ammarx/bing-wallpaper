@@ -1,0 +1,11 @@
+Package: bing-wallpaper
+Version: 0.1.0
+Architecture: all
+Maintainer: Ammar Ahmad <ammar.ahmad1993@gmail.com>
+Depends: python3, python3-gi, python3-lxml, python3-requests, python3-crontab, gir1.2-gtk-3.0, python3-bs4
+Section: utils
+Priority: extra
+Homepage: https://github.com/ammarx
+Description: A simple app to set the Photo of the Day of Bing
+ This app set the Photo of the Day of Bing as your wallpaper
+ every day, automatically.

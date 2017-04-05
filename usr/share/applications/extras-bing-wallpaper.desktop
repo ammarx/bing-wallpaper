@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Bing Wallpaper
+GenericName=Bing Wallpaper
+Comment=Set automatically Bing Photo of the Day
+Exec=/opt/extras.ubuntu.com/bing-wallpaper/share/bing-wallpaper/bing-wallpaper.py
+Icon=/opt/extras.ubuntu.com/bing-wallpaper/share/icons/bing-wallpaper.svg
+Type=Application
+Terminal=false
+StartupNotify=true
+Encoding=UTF-8
+Categories=Utility;
+X-Ubuntu-Gettext-Domain=bing-wallpaper
+Name[en_GB]=Bing Wallpaper

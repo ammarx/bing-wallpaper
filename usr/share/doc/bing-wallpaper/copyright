@@ -1,9 +1,9 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: national-geographic-wallpaper
-Source: http://www.atareao.es
+Upstream-Name: bing-wallpaper
+Source: https://www.github.com/ammarx
 
 Files: *
-Copyright: 2017 Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>
+Copyright: 2017 Ammar Ahmad <ammar.ahmad1993@gmail.com>
 License: GPL-3.0+
 
 License: GPL-3.0+

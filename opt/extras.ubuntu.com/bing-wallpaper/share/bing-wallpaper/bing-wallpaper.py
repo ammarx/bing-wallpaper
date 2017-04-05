@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# This file is part of national-geographic-background
+# This file is part of bing-background
 #
 # Copyright (C) 2017
-# Lorenzo Carbonell Cerezo <lorenzo.carbonell.cerezo@gmail.com>
+# Ammar Ahmad <ammar.ahmad1993@gmail.com>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -31,16 +31,16 @@ import comun
 import shutil
 
 
-COMMENT = '**national-geographic-wallpaper**'
+COMMENT = '**bing-wallpaper**'
 FILESTART = os.path.join(os.getenv("HOME"), ".config/autostart/\
-national-geographic-wallpaper-autostart.desktop")
+bing-wallpaper-autostart.desktop")
 
 
-class NGW(Gtk.Dialog):  # needs GTK, Python, Webkit-GTK
+class BW(Gtk.Dialog):  # needs GTK, Python, Webkit-GTK
     def __init__(self):
         Gtk.Dialog.__init__(
             self,
-            'National Geographic Wallpaper',
+            'Bing Wallpaper',
             None,
             Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
             (Gtk.STOCK_CANCEL, Gtk.ResponseType.REJECT,
@@ -74,14 +74,13 @@ class NGW(Gtk.Dialog):  # needs GTK, Python, Webkit-GTK
 if __name__ == '__main__':
     if not os.path.exists(comun.CONFIG_APP_DIR):
         os.makedirs(comun.CONFIG_APP_DIR)
-    ngw = NGW()
-    if ngw.run() == Gtk.ResponseType.ACCEPT:
-        ngw.hide()
-        if ngw.switch.get_active():
+    bw = BW()
+    if bw.run() == Gtk.ResponseType.ACCEPT:
+        bw.hide()
+        if bw.switch.get_active():
             if not os.path.exists(os.path.dirname(FILESTART)):
                 os.makedirs(os.path.dirname(FILESTART))
             shutil.copyfile(comun.AUTOSTART, FILESTART)
         else:
             if os.path.exists(FILESTART):
                 os.remove(FILESTART)
-    ngw.destroy()
