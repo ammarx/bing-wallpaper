@@ -1,26 +1,28 @@
-National Geographic Wallpaper
+Bing Wallpaper
 =============================
 
 Compatibility
 -------------
 
-Works with ...
-
-Not compatible with Mate.
-
+Works with Ubuntu 16.04
 
 Download
---------
+-------------
 
 To install from sources clone the repository:
 
-    $ git clone https://github.com/atareao/national-geographic-wallpaper.git
+    $ git clone https://github.com/ammarx/bing-wallpaper.git
+    $ dpkg-deb --build bing-wallpaper
 
-and build the debian package.
+and run the debian package.
 
 Installation
-------------
+-------------
 
-    $ sudo add-apt-repository ppa:atareao/atareao
-    $ sudo apt-get update
-    $ sudo apt-get install national-geographic-wallpaper
+    $ wget https://github.com/ammarx/bing-wallpaper/releases/download/0.1.0/bing-wallpaper.deb
+    $ sudo sudo dpkg -i bing-wallpaper.deb
+
+Credit
+-------------
+
+atareao/national-geographic-wallpaper - https://github.com/atareao/national-geographic-wallpaper
